@@ -47,7 +47,7 @@ const Navbar = () => {
   to="/team"
   className={({ isActive }) =>`flex px-3 rounded-xl p-2 gap-2 items-center transition-all duration-300 ${isActive ? "bg-white/60 text-blue-700" : "text-black/70 hover:bg-white/60 hover:text-blue-700"}`}>
   <Code size={18} />
-  Team
+  Members
 </NavLink>
 
    </div>

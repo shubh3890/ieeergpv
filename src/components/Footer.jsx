@@ -5,7 +5,10 @@ import { Link } from 'react-router'
 const Footer = () => {
   return (
     <>
-      <div className='w-full h-auto bg-gray-900'>
+      <div className=' relative w-full h-auto bg-gray-900'>
+      <img src="/image.png" className=' hidden lg:block w-[300px] absolute animate-float' alt="" />
+      <img src="/lamp3.png" className=' hidden lg:block h-[400px] bottom-0 right-0 absolute ' alt="" />
+      
             <div className='w-full flex items-center justify-center' >
             <img src="/ieeergpv.png" alt="ieeergpv" className='w-[250px]  ' />
 
