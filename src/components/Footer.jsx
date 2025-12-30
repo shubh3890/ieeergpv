@@ -18,7 +18,7 @@ const Footer = () => {
           <div className='font-semibold'>Quick Links</div>
           <div className='flex flex-col gap-2 text-sm text-gray-300'>
             <Link to="/" className="hover:text-white transition">Home</Link>
-            <Link to="/about" className="hover:text-white transition">About</Link>
+            <Link to="/team" className="hover:text-white transition">Team</Link>
             <Link to="/events" className="hover:text-white transition">Events</Link>
             <Link to="/contact" className="hover:text-white transition">Contact</Link>
           </div>
@@ -28,10 +28,21 @@ const Footer = () => {
   <div>Follow Us</div>
 
      <div className="flex flex-col items-center justify-center  gap-6">
-       <Instagram size={18} className="hover:text-pink-500 cursor-pointer" />
-<Linkedin size={18} className="hover:text-blue-500 cursor-pointer" />
-<X size={18} className="hover:text-gray-400 cursor-pointer" />
+        <a
+    href="https://www.instagram.com/ieeestb11426rgpv?igsh=cTJ3Z2ZjNzB1cXc4"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Instagram size={18} className="hover:text-pink-500 cursor-pointer" />
+  </a>
 
+  <a
+    href="https://www.linkedin.com/company/ieee-rgpv/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Linkedin size={18} className="hover:text-blue-500 cursor-pointer" />
+  </a>
        </div>
    </div>
 
@@ -40,11 +51,11 @@ const Footer = () => {
           <div className='flex flex-col gap-2 text-sm text-gray-300 items-center'>
             <div className='flex items-center gap-2'>
               <Mail size={18} />
-              <span>ieeergpv@gmail.com</span>
+              <span>ieeestb1146@gmail.com</span>
             </div>
             <div className='flex items-center gap-2'>
               <Phone size={18} />
-              <span>+91 9XXXXXXXXX</span>
+              <span>+91 9039813288</span>
             </div>
           </div>
         </div>

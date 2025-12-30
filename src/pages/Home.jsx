@@ -19,7 +19,7 @@ const Home = () => {
       
         <h2 className='animate-fade-slide [animation-delay:400ms]'> BRANCH</h2>
 
-        <Link to={"/contact"} className='bg-white sm:text-[17px] text-[15px] hover:scale-110 duration-300 ease-in-out sm:p-3 p-2 mt-20 w-[110px] flex justify-between items-center font-semibold rounded-full text-blue-700'>Contact Us</Link>
+        <Link to={"/contact"} className='bg-white sm:text-[17px] text-[15px] hover:scale-110 duration-300 ease-in-out sm:p-3 p-2 mt-20 w-[110px] flex justify-center items-center font-semibold rounded-full text-blue-700'>Contact Us</Link>
         
       </h2>
       </div>
@@ -66,6 +66,30 @@ const Home = () => {
           <div className="w-full animate-fade-slide mt-10 flex flex-wrap gap-6 justify-center pb-10">
 
         {/* CARD */} 
+        <div className="from-blue-100 via-indigo-100 to-blue-100 hover:shadow-xl hover:-translate-y-8 transition-all duration-500 ease-in-out rounded-md px-10 pt-10 pb-5">
+          <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
+           <div className="text-blue-950 text-2xl text-left mt-3 font-semibold">
+            Testing
+          </div>
+           <p className='text-gray-700 mb-4 text-left mt-4'> 
+            Lorem ipsum rcitationem quia obcaecati? Minus eveniet eum unde suscipit? Voluptatem, aliquid fuga. Iste sint quae adipisci harum sequi excepturi accusantium fugiat voluptatum minus distinctio placeat officia recusandae, id porro.
+           </p>
+           <Link to={"/events"} className='text-blue-700 text-semibold'>Read More</Link>
+           
+          </div>
+        </div>
+        <div className="from-blue-100 via-indigo-100 to-blue-100 hover:shadow-xl hover:-translate-y-8 transition-all duration-500 ease-in-out rounded-md px-10 pt-10 pb-5">
+          <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
+           <div className="text-blue-950 text-2xl text-left mt-3 font-semibold">
+            Testing
+          </div>
+           <p className='text-gray-700 mb-4 text-left mt-4'> 
+            Lorem ipsum rcitationem quia obcaecati? Minus eveniet eum unde suscipit? Voluptatem, aliquid fuga. Iste sint quae adipisci harum sequi excepturi accusantium fugiat voluptatum minus distinctio placeat officia recusandae, id porro.
+           </p>
+           <Link to={"/events"} className='text-blue-700 text-semibold'>Read More</Link>
+           
+          </div>
+        </div>
         <div className="from-blue-100 via-indigo-100 to-blue-100 hover:shadow-xl hover:-translate-y-8 transition-all duration-500 ease-in-out rounded-md px-10 pt-10 pb-5">
           <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
            <div className="text-blue-950 text-2xl text-left mt-3 font-semibold">

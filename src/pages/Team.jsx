@@ -40,7 +40,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4'>
-      <img src="harshtiwari.jpeg" className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="harshtiwari.jpeg" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Harsh Tiwari</div>
       <div className='text-gray-700 text-left font-semibold'>Chair</div>
@@ -90,7 +90,7 @@ const Team = () => {
 
       </div>
       <h2 className="text-blue-900 animate-fade-slide font-serif mt-10 mb-8 font-bold text-3xl text-left">
-        Executive Committee
+       IEEE Team Members
       </h2>
         <div className='flex animate-fade-slide flex-wrap gap-6 pb-10 justify-center' >
      
@@ -101,7 +101,7 @@ const Team = () => {
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Rohit Sahu</div>
       <div className='text-gray-700 text-left font-semibold'>Event Team Volunteer</div>
-      <div className='text-gray-500 text-left font-bold'>Membership No - 123456</div>
+      
       </div>
       {/* card */}
         {/* card */}
@@ -111,7 +111,47 @@ const Team = () => {
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Vivek Yadav</div>
       <div className='text-gray-700 text-left font-semibold'>Event Team Volunteer</div>
-      <div className='text-gray-500 text-left font-bold'>Membership No - 123456</div>
+      
+      </div>
+      {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4 '>
+      <img src="yashpawar.png" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Yash Pawar</div>
+      <div className='text-gray-700 text-left font-semibold'>Graphic Team Volunteer</div>
+      
+      </div>
+      {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4 '>
+      <img src="pranjal.JPG" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Pranjal Dwivedi</div>
+      <div className='text-gray-700 text-left font-semibold'>PR Team Volunteer</div>
+      
+      </div>
+      {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4 '>
+      <img src="nishant.jpeg" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Nishant Shukla</div>
+      <div className='text-gray-700 text-left font-semibold'>PR Team Volunteer</div>
+      
+      </div>
+      {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4 '>
+      <img src="bindeshwari.jpeg" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950  font-semibold text-xl text-left'>Bindeshwari Tumram</div>
+      <div className='text-gray-700 text-left font-semibold'>Graphic Team Volunteer</div>
+      
       </div>
       {/* card */}
       </div>
