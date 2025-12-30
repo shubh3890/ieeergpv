@@ -7,12 +7,12 @@ const Contact = () => {
     <div className='pt-20 min-h-screen bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100'>
       
       {/* Heading */}
-      <h2 className="text-blue-900 mt-10 font-bold text-3xl text-center">
+      <h2 className="text-blue-900 mt-10 font-bold animate-fade-slide text-3xl text-center">
         Reach Out To Us
       </h2>
 
       {/* Divider */}
-      <div className='flex justify-center mt-2'>
+      <div className='flex animate-fade-slide justify-center mt-2'>
         <img
           src="/devider.png"
           className="h-[70px] w-[200px]"
@@ -21,7 +21,7 @@ const Contact = () => {
       </div>
 
       {/* Main Section */}
-      <div className='flex md:flex-row flex-col mt-10 px-6 md:px-20'>
+      <div className='flex md:flex-row animate-fade-slide flex-col mt-10 px-6 md:px-20'>
 
         {/* LEFT SECTION */}
         <div className='md:w-1/2 w-full flex justify-center items-center'>
@@ -106,7 +106,7 @@ const Contact = () => {
     Find Us On Map
   </h2>
 
-  <div className="w-full h-[450px] pb-10 rounded-xl overflow-hidden shadow-lg">
+  <div className="w-full animate-fade-slide h-[450px] pb-10 rounded-xl overflow-hidden shadow-lg">
     <iframe
       src="https://www.google.com/maps?q=Computer+Science+Department+UIT+RGPV+Bhopal&output=embed"
       width="100%"

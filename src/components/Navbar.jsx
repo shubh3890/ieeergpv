@@ -7,7 +7,7 @@ const Navbar = () => {
   
   return (
     <div>
-     <div className={`w-full h-auto fixed pl-5    bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100 md:pr-20 pr-5 top-0  flex justify-between items-center`}>
+     <div className={`w-full h-auto fixed pl-5 z-50   bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100 md:pr-20 pr-5 top-0  flex justify-between items-center`}>
    <div className="flex md:ml-14 ml-2">
     <img src="/logo.png" className=" md:w-30 w-20 md:h-8 h-7 md:mt-5 mt-4 mb-2" alt="" />
     <div className="flex-col mt-4 mt-5.5 ml-4 mb-2 ">
