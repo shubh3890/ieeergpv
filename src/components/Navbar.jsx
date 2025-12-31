@@ -9,7 +9,7 @@ const Navbar = () => {
     <div>
      <div className={`w-full h-auto fixed pl-5 z-50   bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100 md:pr-20 pr-5 top-0  flex justify-between items-center`}>
    <div className="flex md:ml-14 ml-2">
-    <img src="/logo.png" className=" md:w-30 w-20 md:h-8 h-7 md:mt-5 mt-4 mb-2" alt="" />
+    <img src="/dw.png" className=" md:w-30 w-20 md:h-10 h-9 md:mt-5 mt-4 mb-2" alt="" />
     <div className="flex-col mt-4 mt-5.5 ml-4 mb-2 ">
     <div className="text-black font-semibold md:text-[13px] text-[10px]">
                 IEEE
@@ -70,7 +70,7 @@ const Navbar = () => {
   transform transition-transform duration-500 ease-in-out
   ${panel ? "translate-x-0" : "translate-x-full"}`}>
   <div className='flex px-5  border-b border-gray-300 pb-6 justify-between w-full'>
-    <img src="/logo.png" alt="ieee-rgpv" className='w-20' />
+    <img src="/dw.png" alt="ieee-rgpv" className='w-24' />
     <X size={20} onClick={()=>{setPanel(false)}} className='text-black'/>
   </div>
   <div className='w-full flex-col'>

@@ -27,7 +27,7 @@ const Team = () => {
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Dr. Piyush Shukla</div>
       <div className='text-gray-700 text-left font-semibold'>Branch Councellor</div>
-      <div className='text-gray-500 text-left font-bold'>Membership No - 123456</div>
+      <div className='text-gray-500 text-left font-bold'>Membership No - 93861870</div>
       </div>
       {/* card */}
 
@@ -44,7 +44,7 @@ const Team = () => {
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Harsh Tiwari</div>
       <div className='text-gray-700 text-left font-semibold'>Chair</div>
-      <div className='text-gray-500 text-left font-bold'>Membership No - 123456</div>
+      <div className='text-gray-500 text-left font-bold'>Membership No - 100954984</div>
       </div>
       {/* card */}
         {/* card */}
@@ -74,7 +74,7 @@ const Team = () => {
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Shubh Agrawal</div>
       <div className='text-gray-700 text-left font-semibold'>Webmaster</div>
-      <div className='text-gray-500 text-left font-bold'>Membership No - 100954457</div>
+      
       </div>
       {/* card */}
         {/* card */}
@@ -84,7 +84,17 @@ const Team = () => {
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Vinay Sahu</div>
       <div className='text-gray-700 text-left font-semibold'>Supervisior</div>
-      <div className='text-gray-500 text-left font-bold'>Membership No - 00</div>
+    
+      </div>
+      {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4'>
+      <img src="arjun.jpg" className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Arjun Dhakad</div>
+      <div className='text-gray-700 text-left font-semibold'>Supervisior</div>
+     
       </div>
       {/* card */}
 
@@ -151,6 +161,46 @@ const Team = () => {
       </div>
       <div className='text-blue-950  font-semibold text-xl text-left'>Bindeshwari Tumram</div>
       <div className='text-gray-700 text-left font-semibold'>Graphic Team Volunteer</div>
+      
+      </div>
+      {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4 '>
+      <img src="divyanshi.jpeg" className='w-full  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Divyanshi Solanki</div>
+      <div className='text-gray-700 text-left font-semibold'> Team Volunteer</div>
+      
+      </div>
+      {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4 '>
+      <img src="shreya.jpeg" className='w-full  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Shreya Yogi</div>
+      <div className='text-gray-700 text-left font-semibold'>Event Team Volunteer</div>
+      
+      </div>
+      {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4 '>
+      <img src="sarvang.jpg" className='w-full object-top  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Sarvang Sharma</div>
+      <div className='text-gray-700 text-left font-semibold'>Team Volunteer</div>
+      
+      </div>
+      {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4 '>
+      <img src="arpan.jpg" className='w-full object-top  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Arpan Jain</div>
+      <div className='text-gray-700 text-left font-semibold'>Team Volunteer</div>
       
       </div>
       {/* card */}

@@ -11,7 +11,7 @@ const Home = () => {
       <div className='w-full absolute sm:h-[600px]  h-[500px] top-0 z-10 bg-black/15'>
       </div>
       <div className='absolute animate-float  drop-shadow-md sm:text-6xl text-4xl leading-normal text-white font-extrabold font-sans text-left top-10 sm:top-20 left-10 sm:left-20 z-20'>
-        <h2 >
+        <div >
         <h2 className='animate-fade-slide'> IEEE</h2>
         
         <h2 className='animate-fade-slide [animation-delay:200ms]'>  RGPV STUDENT</h2>
@@ -21,7 +21,7 @@ const Home = () => {
 
         <Link to={"/contact"} className='bg-white sm:text-[17px] text-[15px] hover:scale-110 duration-300 ease-in-out sm:p-3 p-2 mt-20 w-[110px] flex justify-center items-center font-semibold rounded-full text-blue-700'>Contact Us</Link>
         
-      </h2>
+      </div>
       </div>
     </div>
       <h2 className="text-blue-900 mt-10 font-bold animate-fade-slide text-3xl text-center">
@@ -118,6 +118,21 @@ const Home = () => {
           className="h-[70px] w-[200px]"
           alt="divider"
         />
+      </div>
+          <div className='flex animate-fade-slide  flex-wrap gap-6 pb-10 justify-center'>
+         <img src="/carousel1.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        
+        
+         <img src="/event1i1.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        
+        <img src="/event1i2.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        
+        <img src="/event1i3.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        
+        <img src="/event1i4.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+    
+          <img src="/carousel2.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        
       </div>
 
     </div>
