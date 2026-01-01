@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Phone,Code,Book, House, SquareMenu, X } from 'lucide-react'
-import { NavLink } from 'react-router'
+import { Link, NavLink } from 'react-router'
 
 const Navbar = () => {
   const [panel,setPanel] = useState(false)
@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div>
      <div className={`w-full h-auto fixed pl-5 z-50   bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100 md:pr-20 pr-5 top-0  flex justify-between items-center`}>
-   <div className="flex md:ml-14 ml-2">
+   <Link to={"/"} className="flex md:ml-14 ml-2">
     <img src="/dw.png" className=" md:w-30 w-20 md:h-10 h-9 md:mt-5 mt-4 mb-2" alt="" />
     <div className="flex-col mt-4 mt-5.5 ml-4 mb-2 ">
     <div className="text-black font-semibold md:text-[13px] text-[10px]">
@@ -18,7 +18,7 @@ const Navbar = () => {
   RGPV STUDENT BRANCH
     </div>
     </div>
-   </div>
+   </Link>
     <div className="lg:block hidden">
      <div  className="flex text-black/70 font-semibold gap-10">
     <NavLink

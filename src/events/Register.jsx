@@ -54,10 +54,10 @@ const Register = () => {
     navigate("/events")
   };
   return (
-    <div className="pt-20 w-full flex justify-center  min-h-screen bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100">
+    <div className="pt-20 w-full pb-10 flex justify-center  min-h-screen bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-xl mt-5 bg-white/30 backdrop-blur-md rounded-xl p-10 flex flex-col gap-4 animate-fade-slide"
+        className="w-full max-w-xl mt-5  bg-white/30 backdrop-blur-md rounded-xl p-10 flex flex-col gap-4 animate-fade-slide"
       >
         <h2 className="text-2xl font-bold text-blue-900 text-center mb-4">
           Event Registration

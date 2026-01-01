@@ -23,7 +23,7 @@ const Team = () => {
       {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4'>
-      <img src="piyyushsir.jpg" className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="piyyushsir.jpg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Dr. Piyush Shukla</div>
       <div className='text-gray-700 text-left font-semibold'>Branch Councellor</div>
@@ -40,7 +40,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4'>
-      <img src="harshtiwari.jpeg" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="harshtiwari.jpeg" loading='lazy' className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Harsh Tiwari</div>
       <div className='text-gray-700 text-left font-semibold'>Chair</div>
@@ -50,37 +50,38 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4'>
-      <img src="tishirraymondmichael.jpeg" className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="tishirraymondmichael.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Tishir Michael</div>
       <div className='text-gray-700 text-left font-semibold'>Vice Chair</div>
       <div className='text-gray-500 text-left font-bold'>Membership No - 100954518</div>
       </div>
       {/* card */}
+       {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4'>
+      <img src="shubhagrawal.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Shubh Agrawal</div>
+      <div className='text-gray-700 text-left font-semibold'>Webmaster</div>
+       <div className='text-gray-500 text-left font-bold'>Membership No - 100954xx</div>
+      </div>
+      {/* card */}
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4'>
-      <img src="syedabidrazajaidi.jpeg" className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="syedabidrazajaidi.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Syed Abid Zaidi</div>
       <div className='text-gray-700 text-left font-semibold'>Treasurer</div>
       <div className='text-gray-500 text-left font-bold'>Membership No - 100954457</div>
       </div>
       {/* card */}
+        
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4'>
-      <img src="shubhagrawal.jpeg" className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
-      </div>
-      <div className='text-blue-950 font-semibold text-2xl text-left'>Shubh Agrawal</div>
-      <div className='text-gray-700 text-left font-semibold'>Webmaster</div>
-      
-      </div>
-      {/* card */}
-        {/* card */}
-      <div className='p-6 bg-white/20 rounded-md'>
-      <div className='w-[200px] h-[200px] mb-4'>
-      <img src="vinaysahu.jpg" className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="vinaysahu.jpg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Vinay Sahu</div>
       <div className='text-gray-700 text-left font-semibold'>Supervisior</div>
@@ -90,7 +91,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4'>
-      <img src="arjun.jpg" className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="arjun.jpg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Arjun Dhakad</div>
       <div className='text-gray-700 text-left font-semibold'>Supervisior</div>
@@ -107,7 +108,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="rohitsahu.jpg" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="rohitsahu.jpg" loading='lazy' className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Rohit Sahu</div>
       <div className='text-gray-700 text-left font-semibold'>Event Team Volunteer</div>
@@ -117,7 +118,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="vivekyadav.jpeg" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="vivekyadav.jpeg" loading='lazy' className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Vivek Yadav</div>
       <div className='text-gray-700 text-left font-semibold'>Event Team Volunteer</div>
@@ -127,7 +128,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="yashpawar.png" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="yashpawar.png" loading='lazy' className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Yash Pawar</div>
       <div className='text-gray-700 text-left font-semibold'>Graphic Team Volunteer</div>
@@ -137,7 +138,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="pranjal.JPG" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="pranjal.JPG" loading='lazy' className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Pranjal Dwivedi</div>
       <div className='text-gray-700 text-left font-semibold'>PR Team Volunteer</div>
@@ -147,7 +148,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="nishant.jpeg" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="nishant.jpeg" loading='lazy' className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Nishant Shukla</div>
       <div className='text-gray-700 text-left font-semibold'>PR Team Volunteer</div>
@@ -157,7 +158,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="bindeshwari.jpeg" className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="bindeshwari.jpeg" loading='lazy' className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950  font-semibold text-xl text-left'>Bindeshwari Tumram</div>
       <div className='text-gray-700 text-left font-semibold'>Graphic Team Volunteer</div>
@@ -167,7 +168,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="divyanshi.jpeg" className='w-full  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="divyanshi.jpeg" loading='lazy' className='w-full  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Divyanshi Solanki</div>
       <div className='text-gray-700 text-left font-semibold'> Team Volunteer</div>
@@ -177,7 +178,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="shreya.jpeg" className='w-full  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="shreya.jpeg" loading='lazy' className='w-full  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Shreya Yogi</div>
       <div className='text-gray-700 text-left font-semibold'>Event Team Volunteer</div>
@@ -187,7 +188,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="sarvang.jpg" className='w-full object-top  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="sarvang.jpg" loading='lazy' className='w-full object-top  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Sarvang Sharma</div>
       <div className='text-gray-700 text-left font-semibold'>Team Volunteer</div>
@@ -197,7 +198,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="arpan.jpg" className='w-full object-top  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="arpan.jpg" loading='lazy' className='w-full object-top  rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Arpan Jain</div>
       <div className='text-gray-700 text-left font-semibold'>Team Volunteer</div>

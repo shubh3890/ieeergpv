@@ -43,15 +43,15 @@ const Event1 = () => {
         <img src="/devider.png" className="h-[70px] w-[200px]" alt="divider" />
       </div>
       <div className='flex animate-fade-slide  flex-wrap gap-6 pb-10 justify-center'>
-        <img src="/event1i1.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        <img src="/event1i1.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
         
-        <img src="/event1i2.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        <img src="/event1i2.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
         
-        <img src="/event1i3.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        <img src="/event1i3.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
         
-        <img src="/event1i4.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        <img src="/event1i4.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
     
-        <img src="/event1i5.jpeg" className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        <img src="/event1i5.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
         
       </div>
     </div>
