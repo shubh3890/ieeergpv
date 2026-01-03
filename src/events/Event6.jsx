@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const Event6 = () => {
   return (
@@ -27,6 +28,12 @@ const Event6 = () => {
               <br /><br />
               Students are encouraged to participate actively and contribute towards fostering a culture of dignity, equality, and safety on campus.
              </p>
+             <Link to={"/events/register"}>
+              <div className="text-white mt-10 text-xl p-3 rounded-md font-semibold bg-gradient-to-r from-blue-800 to-blue-950 hover:scale-110 duration-300 ease-in-out transition-all">
+                     Register
+              </div>
+
+             </Link>
              
           </div>   
          

@@ -98,6 +98,17 @@ const Team = () => {
      
       </div>
       {/* card */}
+        {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4'>
+      <img src="Tanish.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Tanish Karwekar</div>
+      <div className='text-gray-700 text-left font-semibold'>Secretary</div>
+       <div className='text-gray-500 text-left font-bold'>Membership No - 100954457</div>
+     
+      </div>
+      {/* card */}
 
       </div>
       <h2 className="text-blue-900 animate-fade-slide font-serif mt-10 mb-8 font-bold text-3xl text-left">

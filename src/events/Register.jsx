@@ -88,7 +88,7 @@ const Register = () => {
           value={formData.name}
           onChange={handleChange}
           required
-          className="p-3 rounded-lg outline-none"
+          className="p-3  rounded-lg outline-none"
         />
 
         {/* Email */}
@@ -142,6 +142,9 @@ const Register = () => {
           <option value="ECE">AU</option>
           <option value="ME">ME</option>
           <option value="CE">CE</option>
+          <option value="CE">AIML</option>
+          <option value="CE">CSBS</option>
+          <option value="CE">DS</option>
         </select>
 
         {/* Year */}
