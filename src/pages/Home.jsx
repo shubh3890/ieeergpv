@@ -69,11 +69,10 @@ const Home = () => {
         <div className="from-blue-100 via-indigo-100 to-blue-100 hover:shadow-xl hover:-translate-y-8 transition-all duration-500 ease-in-out rounded-md px-10 pt-10 pb-5">
           <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
            <div className="text-blue-950 text-2xl text-left mt-3 font-semibold">
-            Testing
+            Seminar
           </div>
            <p className='text-gray-700 mb-4 text-left mt-4'> 
-            Lorem ipsum rcitationem quia obcaecati? Minus eveniet eum unde suscipit? Voluptatem, aliquid fuga. Iste sint quae adipisci harum sequi excepturi accusantium fugiat voluptatum minus distinctio placeat officia recusandae, id porro.
-           </p>
+           This seminar focuses on emerging technologies and global innovations, featuring an expert guest lecture on Artificial Intelligence, Quantum Computing, and future technology trends shaping industries, research, and the digital world. </p>
            <Link to={"/events"} className='text-blue-700 text-semibold'>Read More</Link>
            
           </div>
@@ -81,11 +80,10 @@ const Home = () => {
         <div className="from-blue-100 via-indigo-100 to-blue-100 hover:shadow-xl hover:-translate-y-8 transition-all duration-500 ease-in-out rounded-md px-10 pt-10 pb-5">
           <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
            <div className="text-blue-950 text-2xl text-left mt-3 font-semibold">
-            Testing
+            DRISHTI
           </div>
            <p className='text-gray-700 mb-4 text-left mt-4'> 
-            Lorem ipsum rcitationem quia obcaecati? Minus eveniet eum unde suscipit? Voluptatem, aliquid fuga. Iste sint quae adipisci harum sequi excepturi accusantium fugiat voluptatum minus distinctio placeat officia recusandae, id porro.
-           </p>
+           DRISHTI is a poster making competition based on the theme “Innovation for Sustainable Infrastructure”, encouraging participants to express creative ideas that promote eco-friendly development and a sustainable future.</p>
            <Link to={"/events"} className='text-blue-700 text-semibold'>Read More</Link>
            
           </div>
@@ -93,10 +91,10 @@ const Home = () => {
         <div className="from-blue-100 via-indigo-100 to-blue-100 hover:shadow-xl hover:-translate-y-8 transition-all duration-500 ease-in-out rounded-md px-10 pt-10 pb-5">
           <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
            <div className="text-blue-950 text-2xl text-left mt-3 font-semibold">
-            Testing
+            Technical Workshop
           </div>
            <p className='text-gray-700 mb-4 text-left mt-4'> 
-            Lorem ipsum rcitationem quia obcaecati? Minus eveniet eum unde suscipit? Voluptatem, aliquid fuga. Iste sint quae adipisci harum sequi excepturi accusantium fugiat voluptatum minus distinctio placeat officia recusandae, id porro.
+           Technical Workshop on Hands-on IoT & Smart Systems offers practical learning on sensor integration and IoT architecture, helping participants understand how smart systems are designed, connected, and applied in real-world scenarios.
            </p>
            <Link to={"/events"} className='text-blue-700 text-semibold'>Read More</Link>
            

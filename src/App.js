@@ -11,6 +11,12 @@ import Events from './pages/Events';
 import Event1 from './events/Event1';
 import ScrollToTop from './components/ScrollToTop';
 import Register from './events/Register';
+import Event2 from './events/Event2';
+import Event3 from './events/Event3';
+import Event4 from './events/Event4';
+import Event5 from './events/Event5';
+import Event6 from './events/Event6';
+import Event7 from './events/Event7';
 
 function App() {
   return (
@@ -25,6 +31,12 @@ function App() {
        
         <Route path="/events" element={<Events />}/>
            <Route path="/events/event1" element={<Event1 />} />
+           <Route path="/events/event2" element={<Event2 />} />
+           <Route path="/events/event3" element={<Event3 />} />
+           <Route path="/events/event4" element={<Event4 />} />
+           <Route path="/events/event5" element={<Event5 />} />
+           <Route path="/events/event6" element={<Event6 />} />
+           <Route path="/events/event7" element={<Event7 />} />
            <Route path="/events/register" element={<Register />} />
      
       </Routes>

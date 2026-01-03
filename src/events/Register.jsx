@@ -72,10 +72,12 @@ const Register = () => {
           className="p-3 rounded-lg text-gray-700 outline-none bg-white"
         >
           <option value="">Select Event</option>
-          <option value="IEEE Tech Talk">IEEE Tech Talk</option>
-          <option value="Hackathon 2025">Hackathon 2025</option>
-          <option value="AI Workshop">AI Workshop</option>
-          <option value="Ideathon">Ideathon</option>
+          <option value="Seminar: Emerging Technologies & Global Innovations">Seminar: Emerging Technologies & Global Innovations</option>
+          <option value="DRISHTI: Poster Making Competition">DRISHTI: Poster Making Competition</option>
+          <option value="Technical Workshop: Hands-on IoT & Smart Systems">Technical Workshop: Hands-on IoT & Smart Systems</option>
+          <option value="Guest Lecture: Ethics in Artificial Intelligence">Guest Lecture: Ethics in Artificial Intelligence</option>
+          <option value="IEEE Membership Awareness & Benefits Drive">IEEE Membership Awareness & Benefits Drive</option>
+          <option value="IEEE RGPV Mini Hackathon (12 Hours)">IEEE RGPV Mini Hackathon (12 Hours)</option>
         </select>
 
         {/* Name */}
@@ -136,6 +138,8 @@ const Register = () => {
           <option value="CSE">CSE</option>
           <option value="IT">IT</option>
           <option value="ECE">ECE</option>
+          <option value="ECE">EX</option>
+          <option value="ECE">AU</option>
           <option value="ME">ME</option>
           <option value="CE">CE</option>
         </select>

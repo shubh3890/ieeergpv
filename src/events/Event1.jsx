@@ -2,7 +2,7 @@ import React from 'react'
 
 const Event1 = () => {
   return (
-    <div className='pt-20 px-20 bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100'>
+    <div className='pt-20 px-10 sm:px-20 bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100'>
       
       <h2 className="text-blue-900 mt-10 font-bold animate-fade-slide text-3xl text-center">
         Event Details
