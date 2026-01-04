@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Mail, Phone, X } from 'lucide-react'
+import { Instagram, Linkedin, Mail, Phone } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router'
 

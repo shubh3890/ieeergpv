@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router';
-
+import { toast } from "react-toastify";
 const Register = () => {
      const [loading, setLoading] = useState(false);
  const navigate  = useNavigate();
@@ -33,7 +33,15 @@ const Register = () => {
       });
 
       if (res.ok) {
-        alert("Registration Successful 🎉");
+        toast.success("Registered Successfully !", {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+         closeOnClick: true,
+          pauseOnHover: true,
+        draggable: true,
+        });
+
         setFormData({
           event: "",
           name: "",
@@ -44,10 +52,24 @@ const Register = () => {
           year: "",
         });
       } else {
-        alert("Submission failed!");
+          toast.error("Submission Failed !", {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+         closeOnClick: true,
+          pauseOnHover: true,
+        draggable: true,
+        });
       }
     } catch (error) {
-      alert("Something went wrong!");
+        toast.error("Something Went Wrong !", {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+         closeOnClick: true,
+          pauseOnHover: true,
+        draggable: true,
+        });
     }
 
     setLoading(false);
@@ -142,9 +164,9 @@ const Register = () => {
           <option value="ECE">AU</option>
           <option value="ME">ME</option>
           <option value="CE">CE</option>
-          <option value="CE">AIML</option>
-          <option value="CE">CSBS</option>
-          <option value="CE">DS</option>
+          <option value="AIML">AIML</option>
+          <option value="CSBS">CSBS</option>
+          <option value="DS">DS</option>
         </select>
 
         {/* Year */}

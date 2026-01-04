@@ -1,4 +1,5 @@
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {  Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
@@ -23,6 +24,7 @@ function App() {
     <div className="App ">
       <Navbar/>
       <ScrollToTop/>
+      <ToastContainer position="top-right" autoClose={3000} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

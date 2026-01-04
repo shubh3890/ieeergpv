@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Mail, MapPin } from "lucide-react";
-
+import { toast } from "react-toastify";
 const Contact = () => {
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
@@ -35,7 +35,15 @@ const handleSubmit = async (e) => {
     );
 
     if (response.ok) {
-      alert("Message sent successfully!");
+      toast.success("Message Sent Successfully!", {
+       position: "top-right",
+       autoClose: 1000,
+       hideProgressBar: false,
+       closeOnClick: true,
+       pauseOnHover: true,
+       draggable: true,
+      });
+
       setFormData({
         name: "",
         email: "",
@@ -44,10 +52,24 @@ const handleSubmit = async (e) => {
         message: "",
       });
     } else {
-      alert("Failed to send message");
+       toast.error("Submission Failed !", {
+              position: "top-right",
+              autoClose: 1000,
+              hideProgressBar: false,
+               closeOnClick: true,
+                pauseOnHover: true,
+              draggable: true,
+              });
     }
   } catch (error) {
-    alert("Network error");
+     toast.error("Submission Failed !", {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+             closeOnClick: true,
+              pauseOnHover: true,
+            draggable: true,
+      });
   }finally {
     setLoading(false)
 
