@@ -149,7 +149,7 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>
-      <img src="pranjal.JPG" loading='lazy' className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="pranjal.jpg" loading='lazy' className='w-full object-top rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Pranjal Dwivedi</div>
       <div className='text-gray-700 text-left font-semibold'>PR Team Volunteer</div>
