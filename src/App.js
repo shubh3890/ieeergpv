@@ -18,10 +18,11 @@ import Event4 from './events/Event4';
 import Event5 from './events/Event5';
 import Event6 from './events/Event6';
 import Event7 from './events/Event7';
-
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <div className="App ">
+     <Analytics/>
       <Navbar/>
       <ScrollToTop/>
       <ToastContainer position="top-right" autoClose={3000} />
