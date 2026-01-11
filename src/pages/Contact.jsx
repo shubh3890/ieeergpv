@@ -1,8 +1,9 @@
-
+import axios from "axios"
 import React, { useState } from "react";
 import { Mail, MapPin } from "lucide-react";
 import { toast } from "react-toastify";
 const Contact = () => {
+  const API_URL = process.env.REACT_APP_API_URL;
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
@@ -19,29 +20,86 @@ const Contact = () => {
     });
   };
 
+// const handleSubmit = async (e) => {
+//   e.preventDefault();
+//   setLoading(true)
+//   try {
+//     const response = await fetch(
+//       "https://formspree.io/f/mwvpebqv", // 👈 YOUR FORM URL
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(formData),
+//       }
+//     );
+
+//     if (response.ok) {
+//       toast.success("Message Sent Successfully!", {
+//        position: "top-right",
+//        autoClose: 1000,
+//        hideProgressBar: false,
+//        closeOnClick: true,
+//        pauseOnHover: true,
+//        draggable: true,
+//       });
+
+//       setFormData({
+//         name: "",
+//         email: "",
+//         phone: "",
+//         subject: "",
+//         message: "",
+//       });
+//     } else {
+//        toast.error("Submission Failed !", {
+//               position: "top-right",
+//               autoClose: 1000,
+//               hideProgressBar: false,
+//                closeOnClick: true,
+//                 pauseOnHover: true,
+//               draggable: true,
+//               });
+//     }
+//   } catch (error) {
+//      toast.error("Submission Failed !", {
+//             position: "top-right",
+//             autoClose: 1000,
+//             hideProgressBar: false,
+//              closeOnClick: true,
+//               pauseOnHover: true,
+//             draggable: true,
+//       });
+//   }finally {
+//     setLoading(false)
+
+//   }
+// };
+
 const handleSubmit = async (e) => {
   e.preventDefault();
-  setLoading(true)
+  setLoading(true);
+
   try {
-    const response = await fetch(
-      "https://formspree.io/f/mwvpebqv", // 👈 YOUR FORM URL
+    const response = await axios.post(
+       `${API_URL}/api/contact/`, // 👈 YOUR BACKEND API
+      formData,
       {
-        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
       }
     );
 
-    if (response.ok) {
+    if (response.status === 201) {
       toast.success("Message Sent Successfully!", {
-       position: "top-right",
-       autoClose: 1000,
-       hideProgressBar: false,
-       closeOnClick: true,
-       pauseOnHover: true,
-       draggable: true,
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
       });
 
       setFormData({
@@ -51,31 +109,23 @@ const handleSubmit = async (e) => {
         subject: "",
         message: "",
       });
-    } else {
-       toast.error("Submission Failed !", {
-              position: "top-right",
-              autoClose: 1000,
-              hideProgressBar: false,
-               closeOnClick: true,
-                pauseOnHover: true,
-              draggable: true,
-              });
     }
   } catch (error) {
-     toast.error("Submission Failed !", {
-            position: "top-right",
-            autoClose: 1000,
-            hideProgressBar: false,
-             closeOnClick: true,
-              pauseOnHover: true,
-            draggable: true,
-      });
-  }finally {
-    setLoading(false)
-
+    toast.error(
+      error.response?.data?.message || "Submission Failed !",
+      {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      }
+    );
+  } finally {
+    setLoading(false);
   }
 };
-
 
   return (
     <div className="pt-20 min-h-screen bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100">

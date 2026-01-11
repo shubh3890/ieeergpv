@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router';
 import { toast } from "react-toastify";
+import axios from   "axios"
+
 const Register = () => {
-     const [loading, setLoading] = useState(false);
+  const API_URL = process.env.REACT_APP_API_URL;
+  const [loading, setLoading] = useState(false);
  const navigate  = useNavigate();
   const [formData, setFormData] = useState({
     event: "",
@@ -21,60 +24,115 @@ const Register = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
 
-    try {
-      const res = await fetch("https://formspree.io/f/xeeojzya", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+  //   try {
+  //     const res = await fetch("https://formspree.io/f/xeeojzya", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(formData),
+  //     });
+
+  //     if (res.ok) {
+  //       toast.success("Registered Successfully !", {
+  //       position: "top-right",
+  //       autoClose: 1000,
+  //       hideProgressBar: false,
+  //        closeOnClick: true,
+  //         pauseOnHover: true,
+  //       draggable: true,
+  //       });
+
+  //       setFormData({
+  //         event: "",
+  //         name: "",
+  //         email: "",
+  //         phone: "",
+  //         college: "",
+  //         branch: "",
+  //         year: "",
+  //       });
+  //     } else {
+  //         toast.error("Submission Failed !", {
+  //       position: "top-right",
+  //       autoClose: 1000,
+  //       hideProgressBar: false,
+  //        closeOnClick: true,
+  //         pauseOnHover: true,
+  //       draggable: true,
+  //       });
+  //     }
+  //   } catch (error) {
+  //       toast.error("Something Went Wrong !", {
+  //       position: "top-right",
+  //       autoClose: 1000,
+  //       hideProgressBar: false,
+  //        closeOnClick: true,
+  //         pauseOnHover: true,
+  //       draggable: true,
+  //       });
+  //   }
+
+  //   setLoading(false);
+  //   navigate("/events")
+  // };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
+  
+
+
+  try {
+    const res = await axios.post(
+      `${API_URL}/api/register/`, // 👈 YOUR BACKEND REGISTER API
+      formData,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    if (res.status === 201) {
+      toast.success("Registered Successfully !", {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
       });
 
-      if (res.ok) {
-        toast.success("Registered Successfully !", {
-        position: "top-right",
-        autoClose: 1000,
-        hideProgressBar: false,
-         closeOnClick: true,
-          pauseOnHover: true,
-        draggable: true,
-        });
+      setFormData({
+        event: "",
+        name: "",
+        email: "",
+        phone: "",
+        college: "",
+        branch: "",
+        year: "",
+      });
 
-        setFormData({
-          event: "",
-          name: "",
-          email: "",
-          phone: "",
-          college: "",
-          branch: "",
-          year: "",
-        });
-      } else {
-          toast.error("Submission Failed !", {
-        position: "top-right",
-        autoClose: 1000,
-        hideProgressBar: false,
-         closeOnClick: true,
-          pauseOnHover: true,
-        draggable: true,
-        });
-      }
-    } catch (error) {
-        toast.error("Something Went Wrong !", {
-        position: "top-right",
-        autoClose: 1000,
-        hideProgressBar: false,
-         closeOnClick: true,
-          pauseOnHover: true,
-        draggable: true,
-        });
+      navigate("/events");
     }
-
+  } catch (error) {
+    toast.error(
+      error.response?.data?.message || "Something Went Wrong !",
+      {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      }
+    );
+  } finally {
     setLoading(false);
-    navigate("/events")
-  };
+  }
+};
   return (
     <div className="pt-20 w-full pb-10 flex justify-center  min-h-screen bg-gradient-to-r from-blue-100 via-indigo-100 to-blue-100">
       <form
