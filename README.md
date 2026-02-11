@@ -10,8 +10,9 @@ The website is actively used to communicate IEEE-related activities, provide eve
 ## 🛠 Tech Stack
 - **Frontend:** React.js
 - **Styling:** CSS / Tailwind CSS
-- **Database:** MongoDB *(planned for future integration)*
+- **Database:** MongoDB 
 - **Deployment:** Vercel
+-  **Backend Deployment:** OnRender
 
 ---
 
