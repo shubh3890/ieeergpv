@@ -1,9 +1,18 @@
 import axios from "axios"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Mail, MapPin } from "lucide-react";
 import { toast } from "react-toastify";
 const Contact = () => {
   const API_URL = process.env.REACT_APP_API_URL;
+  const [backendAwake,setBackendAwake] = useState(false);
+  useEffect(() => {
+    if (backendAwake) return;
+  
+    axios
+      .get(`${API_URL}/api/health`)
+      .then(() => setBackendAwake(true))
+      .catch(() => {});
+  }, [backendAwake, API_URL]);
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
@@ -19,7 +28,10 @@ const Contact = () => {
       [e.target.name]: e.target.value 
     });
   };
-
+ const isValidPhoneNumber=(phone)=>{
+    const regex = /^(?:\+91|0)?[6-9]\d{9}$/;
+    return regex.test(phone);
+  }
 // const handleSubmit = async (e) => {
 //   e.preventDefault();
 //   setLoading(true)
@@ -79,6 +91,9 @@ const Contact = () => {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
+   if(!isValidPhoneNumber(formData.phone)){
+      return toast.error("Invalid Phone",{autoClose: 1000});
+    }
   setLoading(true);
 
   try {

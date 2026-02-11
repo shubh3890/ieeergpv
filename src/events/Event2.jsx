@@ -24,7 +24,7 @@ const Event2 = () => {
              <p className='text-gray-800 mt-6 leading-8 text-left '>
               The Seminar on Emerging Technologies & Global Innovations, scheduled for 11 February 2026, features an expert guest lecture on Artificial Intelligence, Quantum Computing, and upcoming technology trends. The seminar aims to introduce participants to cutting-edge innovations shaping the global tech ecosystem. It will highlight real-world applications, future career opportunities, and the impact of emerging technologies on industries and society. This session is designed to broaden technical knowledge, inspire innovation, and help students understand the direction of future technological advancements worldwide.
 
-              <br /><br />📅 Date: Wednesday, 11 February 2026
+              <br /><br />📅 Date: coming soon
              <br /> ⏰ Time: 10:30 AM – 1:00 PM
               <br />📍 Venue: Electrical Seminar Hall, Auditorium
               <br /><br />

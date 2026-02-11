@@ -1,10 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router';
 import { toast } from "react-toastify";
 import axios from   "axios"
 
 const Register = () => {
   const API_URL = process.env.REACT_APP_API_URL;
+  const [backendAwake,setBackendAwake] = useState(false);
+useEffect(() => {
+  if (backendAwake) return;
+
+  axios
+    .get(`${API_URL}/api/health`)
+    .then(() => setBackendAwake(true))
+    .catch(() => {});
+}, [backendAwake, API_URL]);
   const [loading, setLoading] = useState(false);
  const navigate  = useNavigate();
   const [formData, setFormData] = useState({
@@ -16,7 +25,10 @@ const Register = () => {
     branch: "",
     year: "",
   });
-
+  const isValidPhoneNumber=(phone)=>{
+    const regex = /^(?:\+91|0)?[6-9]\d{9}$/;
+    return regex.test(phone);
+  }
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -24,64 +36,13 @@ const Register = () => {
     });
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setLoading(true);
 
-  //   try {
-  //     const res = await fetch("https://formspree.io/f/xeeojzya", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify(formData),
-  //     });
-
-  //     if (res.ok) {
-  //       toast.success("Registered Successfully !", {
-  //       position: "top-right",
-  //       autoClose: 1000,
-  //       hideProgressBar: false,
-  //        closeOnClick: true,
-  //         pauseOnHover: true,
-  //       draggable: true,
-  //       });
-
-  //       setFormData({
-  //         event: "",
-  //         name: "",
-  //         email: "",
-  //         phone: "",
-  //         college: "",
-  //         branch: "",
-  //         year: "",
-  //       });
-  //     } else {
-  //         toast.error("Submission Failed !", {
-  //       position: "top-right",
-  //       autoClose: 1000,
-  //       hideProgressBar: false,
-  //        closeOnClick: true,
-  //         pauseOnHover: true,
-  //       draggable: true,
-  //       });
-  //     }
-  //   } catch (error) {
-  //       toast.error("Something Went Wrong !", {
-  //       position: "top-right",
-  //       autoClose: 1000,
-  //       hideProgressBar: false,
-  //        closeOnClick: true,
-  //         pauseOnHover: true,
-  //       draggable: true,
-  //       });
-  //   }
-
-  //   setLoading(false);
-  //   navigate("/events")
-  // };
   const handleSubmit = async (e) => {
   e.preventDefault();
+  if(!isValidPhoneNumber(formData.phone)){
+    return toast.error("Invalid Phone",{autoClose: 1000});
+  }
   setLoading(true);
-  
 
 
   try {
@@ -96,9 +57,9 @@ const Register = () => {
     );
 
     if (res.status === 201) {
-      toast.success("Registered Successfully !", {
+      toast.success("Registered Successfully ! Check you Email for further updates.", {
         position: "top-right",
-        autoClose: 1000,
+        autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -152,12 +113,7 @@ const Register = () => {
           className="p-3 rounded-lg text-gray-700 outline-none bg-white"
         >
           <option value="">Select Event</option>
-          <option value="Seminar: Emerging Technologies & Global Innovations">Seminar: Emerging Technologies & Global Innovations</option>
-          <option value="DRISHTI: Poster Making Competition">DRISHTI: Poster Making Competition</option>
-          <option value="Technical Workshop: Hands-on IoT & Smart Systems">Technical Workshop: Hands-on IoT & Smart Systems</option>
-          <option value="Guest Lecture: Ethics in Artificial Intelligence">Guest Lecture: Ethics in Artificial Intelligence</option>
-          <option value="IEEE Membership Awareness & Benefits Drive">IEEE Membership Awareness & Benefits Drive</option>
-          <option value="IEEE RGPV Mini Hackathon (12 Hours)">IEEE RGPV Mini Hackathon (12 Hours)</option>
+           <option value="From Lab to Market: Industry Trends in Photonics & Fiber Optics">From Lab to Market: Industry Trends in Photonics & Fiber Optics</option>
         </select>
 
         {/* Name */}
@@ -194,17 +150,17 @@ const Register = () => {
         />
 
         {/* College */}
-        <select
+        <input
+          type="text"
           name="college"
+          placeholder='College'
           value={formData.college}
           onChange={handleChange}
           required
-          className="p-3 text-gray-700 rounded-lg outline-none bg-white"
-        >
-          <option value="">Select College</option>
-          <option value="UIT RGPV">UIT RGPV</option>
-          <option value="SOIT RGPV">SOIT RGPV</option>
-        </select>
+          className="p-3  rounded-lg outline-none"
+        />
+         
+        
 
         {/* Branch */}
         <select
@@ -225,6 +181,7 @@ const Register = () => {
           <option value="AIML">AIML</option>
           <option value="CSBS">CSBS</option>
           <option value="DS">DS</option>
+          <option value="OTHER">Other</option>
         </select>
 
         {/* Year */}

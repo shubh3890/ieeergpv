@@ -22,17 +22,21 @@ const registrationSchema = new mongoose.Schema({
     college:{
         type:String,
         required:true,
-        enum:["UIT RGPV","SOIT RGPV"]
+        trim:true
     },
     branch:{
         type:String,
         required:true,
-        enum:["CSE","IT","ECE","EX","AU","ME","CE","AIML","CSBS","DS"]
+        enum:["CSE","IT","ECE","EX","AU","ME","CE","AIML","CSBS","DS","OTHER"]
     },
     year:{
         type:String,
         required:true,
         enum: ["1st Year", "2nd Year", "3rd Year", "4th Year"],
+    },
+    emailSent:{
+        type:Boolean,
+        default:false
     }
    
 },{timestamps:true})
