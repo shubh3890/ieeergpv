@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ImageCarousel from '../components/ImageCarousel'
 import { Link } from 'react-router'
+import axios from 'axios';
 const Home = () => {
+  const API_URL = process.env.REACT_APP_API_URL;
+  const [backendAwake,setBackendAwake] = useState(false);
+  useEffect(() => {
+    if (backendAwake) return;
+  
+    axios
+      .get(`${API_URL}/api/health`)
+      .then(() => setBackendAwake(true))
+      .catch(() => {});
+  }, [backendAwake, API_URL]);
   return (
     <div className='pt-20 bg-gradient-to-r  min-h-screen from-blue-100 via-indigo-100 to-blue-100'>
     <div className='relative'>

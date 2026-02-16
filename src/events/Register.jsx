@@ -113,7 +113,7 @@ useEffect(() => {
           className="p-3 rounded-lg text-gray-700 outline-none bg-white"
         >
           <option value="">Select Event</option>
-           <option value="From Lab to Market: Industry Trends in Photonics & Fiber Optics">From Lab to Market: Industry Trends in Photonics & Fiber Optics</option>
+           <option value="Seminar: Emerging Technologies & Global Innovations">Seminar: Emerging Technologies & Global Innovations</option>
         </select>
 
         {/* Name */}

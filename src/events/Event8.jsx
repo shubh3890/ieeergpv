@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+
 
 const Event7 = () => {
   return (
@@ -28,14 +28,9 @@ const Event7 = () => {
               <br />
               <br />
              
-              Register below to participate. Further details and updates will be shared on your registered Email.
+              Gallery of the Event will be shared soon.
              </p>
-             <Link to={"/events/register"}>
-              <div className="text-white mt-4  text-xl p-3 rounded-md font-semibold bg-gradient-to-r from-blue-800 to-blue-950 hover:scale-110 duration-300 ease-in-out transition-all">
-                     Register
-              </div>
-
-             </Link>
+             
              
           </div>   
          
