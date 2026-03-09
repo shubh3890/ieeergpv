@@ -24,7 +24,7 @@ const Event3 = () => {
              </h2>
              <p className='text-gray-800 mt-6 leading-8 text-left '>
               DRISHTI: Poster Making Competition is organized to encourage creative thinking and visual expression on the theme “Innovation for Sustainable Infrastructure.” The event aims to inspire participants to present innovative ideas that support eco-friendly development, resilient infrastructure, and sustainable growth. Through creative posters, students can highlight smart solutions, environmental responsibility, and future-ready designs. The competition promotes awareness about sustainability while enhancing artistic skills, imagination, and the ability to communicate impactful ideas through visual storytelling. 
-             <br /><br />📅 Date: Tuesday, 24 February 2026
+             <br /><br />📅 Date: Coming soon...
              <br /> ⏰ Time: 10:30 AM – 1:00 PM
               <br />📍 Venue: Electrical Seminar Hall, Auditorium
               <br /><br />

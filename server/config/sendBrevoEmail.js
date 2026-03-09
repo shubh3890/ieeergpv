@@ -12,7 +12,7 @@ const sendRegistrationEmail = async (email, name) => {
       name: "IEEE RGPV"
     },
     to: [{ email, name }],
-    subject: "Registration Confirmed | IEEE RGPV's session : From Lab to Market: Industry Trends in Photonics & Fiber Optics",
+    subject: "Registration Confirmed | IEEE RGPV's Synapse : The AI Debate",
     // htmlContent: `
     //   <h2>Hi ${name} 👋</h2>
     //   <p>Your registration was successful.</p>
@@ -44,7 +44,7 @@ const sendRegistrationEmail = async (email, name) => {
           </p>
 
           <p style="font-size:15px; color:#374151;">
-            Thank you for registering for the <strong>From Lab to Market: Industry Trends in Photonics & Fiber Optics</strong>.
+            Thank you for registering for the <strong> Synapse : The AI Debate</strong>.
             We are happy to confirm that your registration has been
             <strong>successfully completed</strong>.
           </p>
@@ -79,6 +79,7 @@ const sendRegistrationEmail = async (email, name) => {
 
           <p style="font-size:14px;">
             Regards,<br/>
+            <strong>Shubh Agrawal</strong><br/>
             <strong>IEEE RGPV Student Branch</strong><br/>
             <span style="color:#6B7280;">ieeestb1146@gmail.com</span>
           </p>

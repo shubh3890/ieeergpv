@@ -113,7 +113,7 @@ useEffect(() => {
           className="p-3 rounded-lg text-gray-700 outline-none bg-white"
         >
           <option value="">Select Event</option>
-           <option value="Seminar: Emerging Technologies & Global Innovations">Seminar: Emerging Technologies & Global Innovations</option>
+           <option value="Synapse : The AI Debate"> Synapse : The AI Debate</option>
         </select>
 
         {/* Name */}
@@ -178,6 +178,7 @@ useEffect(() => {
           <option value="ECE">AU</option>
           <option value="ME">ME</option>
           <option value="CE">CE</option>
+          <option value="PCT">PCT</option>
           <option value="AIML">AIML</option>
           <option value="CSBS">CSBS</option>
           <option value="DS">DS</option>

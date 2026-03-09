@@ -13,7 +13,42 @@ const Events = () => {
       
       <div className="w-full animate-fade-slide mt-10 flex flex-wrap gap-10 justify-center pb-10">
 
-     
+     <div className="bg-blue-500/20 rounded-md w-[280px] px-5 pt-5 pb-5 flex flex-col">
+  
+  {/* IMAGE */}
+  <div className="w-full h-[350px]  overflow-hidden rounded-md">
+    <img
+      src="/event10poster.jpg"
+      alt="event"
+      className="w-full h-full   rounded-md hover:scale-105 transition-all duration-300"
+    />
+  </div>
+
+  {/* TITLE WRAPPER */}
+  <div className="flex items-center justify-center min-h-[70px] mt-3">
+    <div className="text-blue-950 text-xl mb-4 text-center font-bold line-clamp-3">
+       Synapse – <br/> The AI Debate  🚀
+    </div>
+  </div>
+
+  {/* BUTTONS */}
+  <div className="w-full flex justify-between  mt-auto">
+    <Link
+      to={"/events/register"}
+      className="text-white p-3 rounded-md font-semibold bg-gradient-to-r from-blue-800 to-blue-950 hover:scale-105 transition-all"
+    >
+      Register
+    </Link>
+
+    <Link
+      to={"/events/event10"}
+      className="text-white px-5 py-3 rounded-md font-semibold bg-gradient-to-r from-indigo-600 to-violet-700 hover:scale-105 transition-all"
+    >
+      Details
+    </Link>
+  </div>
+
+</div>
 
 <div className="bg-blue-500/20 rounded-md w-[280px] px-5 pt-5 pb-5 flex flex-col">
   
