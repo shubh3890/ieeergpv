@@ -14,7 +14,7 @@ const Event10 = () => {
       </div>
       <div className='flex mt-10 pb-20 lg:flex-row flex-col '>
       <div className='lg:w-1/2 animate-fade-slide  w-full flex justify-center '>
-           <img  src="/event10poster.jpg" className='h-[500px] md:h-[600px] hover:scale-110 duration-300 transition-all ease-in-out rounded-lg w-[450px]' alt="" />
+           <img  src="/event10poster.jpeg" className='h-[500px] md:h-[600px] hover:scale-110 duration-300 transition-all ease-in-out rounded-lg w-[450px]' alt="" />
           
       </div>
          <div className='lg:w-1/2 px-5 w-full' >

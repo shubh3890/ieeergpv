@@ -18,7 +18,7 @@ const Events = () => {
   {/* IMAGE */}
   <div className="w-full h-[350px]  overflow-hidden rounded-md">
     <img
-      src="/event10poster.jpg"
+      src="/event10poster.jpeg"
       alt="event"
       className="w-full h-full   rounded-md hover:scale-105 transition-all duration-300"
     />
