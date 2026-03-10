@@ -27,7 +27,7 @@ const registrationSchema = new mongoose.Schema({
     branch:{
         type:String,
         required:true,
-        enum:["CSE","IT","ECE","EX","AU","ME","CE","AIML","CSBS","DS","PCT","OTHER"]
+        enum:["CSE","IT","ECE","EX","AU","ME","CE","AIML","CSBS","DS","PCT","MCA","OTHER"]
     },
     year:{
         type:String,
