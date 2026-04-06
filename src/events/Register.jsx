@@ -113,7 +113,7 @@ useEffect(() => {
           className="p-3 rounded-lg text-gray-700 outline-none bg-white"
         >
           <option value="">Select Event</option>
-           <option value="Synapse : The AI Debate"> Synapse : The AI Debate</option>
+           <option value="Coming soon"> coming soon ...</option>
         </select>
 
         {/* Name */}
@@ -203,8 +203,9 @@ useEffect(() => {
 
         {/* Submit Button */}
         <button
+         disabled
           type="submit"
-          disabled={loading}
+          // disabled={loading}
           className="mt-3 bg-blue-900 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition-all flex items-center justify-center gap-2 disabled:opacity-70"
         >
           {loading ? (

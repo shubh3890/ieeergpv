@@ -50,11 +50,11 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4'>
-      <img src="tishirraymondmichael.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="pawan.jpg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
-      <div className='text-blue-950 font-semibold text-2xl text-left'>Tishir Michael</div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Pawan Rajak</div>
       <div className='text-gray-700 text-left font-semibold'>Vice Chair</div>
-      <div className='text-gray-500 text-left font-bold'>Membership No - 100954518</div>
+      <div className='text-gray-500 text-left font-bold'>Membership No - 1021741xx</div>
       </div>
       {/* card */}
        {/* card */}
@@ -70,11 +70,11 @@ const Team = () => {
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4'>
-      <img src="syedabidrazajaidi.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      <img src="tishirraymondmichael.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
-      <div className='text-blue-950 font-semibold text-2xl text-left'>Syed Abid Zaidi</div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Tishir Michael</div>
       <div className='text-gray-700 text-left font-semibold'>Treasurer</div>
-      <div className='text-gray-500 text-left font-bold'>Membership No - 100954457</div>
+      <div className='text-gray-500 text-left font-bold'>Membership No - 100954518</div>
       </div>
       {/* card */}
          {/* card */}
@@ -97,17 +97,7 @@ const Team = () => {
      <div className='text-gray-500 text-left font-bold'>Membership No - 102174391</div>
       </div>
         
-         {/* card */}
-      <div className='p-6 bg-white/20 rounded-md'>
-      <div className='w-[200px] h-[200px] mb-4'>
-      <img src="ashutoshgoyal.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
-      </div>
-      <div className='text-blue-950 font-semibold text-2xl text-left'>Ashutosh Goyal</div>
-      <div className='text-gray-700 text-left font-semibold'>Supervisor</div>
-      
-     
-      </div>
-      {/* card */}
+         
         
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
@@ -129,7 +119,17 @@ const Team = () => {
        IEEE Team Members
       </h2>
         <div className='flex animate-fade-slide flex-wrap gap-6 pb-10 justify-center' >
+      {/* card */}
+      <div className='p-6 bg-white/20 rounded-md'>
+      <div className='w-[200px] h-[200px] mb-4'>
+      <img src="ambhujtiwari.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
+      </div>
+      <div className='text-blue-950 font-semibold text-2xl text-left'>Ambuj Tiwari</div>
+      <div className='text-gray-700 text-left font-semibold'>Event Managment</div>
+      
      
+      </div>
+      {/* card */}
         {/* card */}
       <div className='p-6 bg-white/20 rounded-md'>
       <div className='w-[200px] h-[200px] mb-4 '>

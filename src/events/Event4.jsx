@@ -22,7 +22,7 @@ const Event4 = () => {
               Technical Workshop: Hands-on IoT & Smart Systems
              </h2>
              <p className='text-gray-800 mt-6 leading-8 text-left '>
-            The Technical Workshop on Hands-on IoT & Smart Systems is designed to provide practical exposure to Internet of Things technologies and smart system development. This workshop focuses on real-world sensor integration, data communication, and understanding IoT architecture. Participants will gain hands-on experience in connecting hardware with software, learning how smart devices collect, transmit, and process data. The session aims to strengthen practical skills, enhance technical understanding, and prepare students for modern IoT-based applications used across industries. <br /><br />📅 Date: Wednesday, 18 March 2026
+            The Technical Workshop on Hands-on IoT & Smart Systems is designed to provide practical exposure to Internet of Things technologies and smart system development. This workshop focuses on real-world sensor integration, data communication, and understanding IoT architecture. Participants will gain hands-on experience in connecting hardware with software, learning how smart devices collect, transmit, and process data. The session aims to strengthen practical skills, enhance technical understanding, and prepare students for modern IoT-based applications used across industries. <br /><br />📅 Date: coming soon
              <br /> ⏰ Time: 10:30 AM – 1:00 PM
               <br />📍 Venue: Electrical Seminar Hall, Auditorium
               <br /><br />

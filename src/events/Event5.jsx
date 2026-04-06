@@ -22,7 +22,7 @@ const Event5 = () => {
                Guest Lecture: Ethics in Artificial Intelligence
              </h2>
              <p className='text-gray-800 mt-6 leading-8 text-left '>
-              The Guest Lecture on Ethics in Artificial Intelligence focuses on understanding the societal, moral, and ethical challenges associated with the rapid development of AI technologies. The session will explore topics such as data privacy, algorithmic bias, accountability, transparency, and the responsible use of artificial intelligence. Participants will gain awareness of how ethical decision-making plays a crucial role in shaping trustworthy and human-centered AI systems. This lecture aims to encourage critical thinking and responsible innovation among future technologists. <br /><br />📅 Date: Wednesday, 08 April 2026
+              The Guest Lecture on Ethics in Artificial Intelligence focuses on understanding the societal, moral, and ethical challenges associated with the rapid development of AI technologies. The session will explore topics such as data privacy, algorithmic bias, accountability, transparency, and the responsible use of artificial intelligence. Participants will gain awareness of how ethical decision-making plays a crucial role in shaping trustworthy and human-centered AI systems. This lecture aims to encourage critical thinking and responsible innovation among future technologists. <br /><br />📅 Date: coming soon
              <br /> ⏰ Time: 10:30 AM – 1:00 PM
               <br />📍 Venue: Electrical Seminar Hall, Auditorium
               <br /><br />
