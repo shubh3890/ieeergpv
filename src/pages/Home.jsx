@@ -61,60 +61,93 @@ const Home = () => {
 
    
       </div>
-    <h2 className="text-blue-900 mt-10 font-bold animate-fade-slide text-3xl text-center">
+    {/* <h2 className="text-blue-900 mt-10 font-bold animate-fade-slide text-3xl text-center">
         Upcoming Events
-      </h2>
+      </h2> */}
 
       {/* Divider */}
-      <div className='flex animate-fade-slide justify-center mt-2'>
+      {/* <div className='flex animate-fade-slide justify-center mt-2'>
         <img
           src="/devider.png"
           className="h-[70px] w-[200px]"
           alt="divider"
         />
-      </div>
+      </div> */}
 
-          <div className="w-full animate-fade-slide mt-10 flex flex-wrap gap-6 justify-center pb-10">
+       {/* ANNOUNCEMENTS */}
+<h2 className="text-blue-900 mt-10 font-bold animate-fade-slide text-3xl text-center">
+  Announcements
+</h2>
 
-        {/* CARD */} 
-        <div className="from-blue-100 via-indigo-100 to-blue-100 hover:shadow-xl hover:-translate-y-8 transition-all duration-500 ease-in-out rounded-md px-10 pt-10 pb-5">
-          <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
-           <div className="text-blue-950 text-2xl text-left mt-3 font-semibold">
-            Seminar
-          </div>
-           <p className='text-gray-700 mb-4 text-left mt-4'> 
-           This seminar focuses on emerging technologies and global innovations, featuring an expert guest lecture on Artificial Intelligence, Quantum Computing, and future technology trends shaping industries, research, and the digital world. </p>
-           <Link to={"/events"} className='text-blue-700 text-semibold'>Read More</Link>
-           
-          </div>
-        </div>
-        <div className="from-blue-100 via-indigo-100 to-blue-100 hover:shadow-xl hover:-translate-y-8 transition-all duration-500 ease-in-out rounded-md px-10 pt-10 pb-5">
-          <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
-           <div className="text-blue-950 text-2xl text-left mt-3 font-semibold">
-            DRISHTI
-          </div>
-           <p className='text-gray-700 mb-4 text-left mt-4'> 
-           DRISHTI is a poster making competition based on the theme “Innovation for Sustainable Infrastructure”, encouraging participants to express creative ideas that promote eco-friendly development and a sustainable future.</p>
-           <Link to={"/events"} className='text-blue-700 text-semibold'>Read More</Link>
-           
-          </div>
-        </div>
-        <div className="from-blue-100 via-indigo-100 to-blue-100 hover:shadow-xl hover:-translate-y-8 transition-all duration-500 ease-in-out rounded-md px-10 pt-10 pb-5">
-          <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
-           <div className="text-blue-950 text-2xl text-left mt-3 font-semibold">
-            Technical Workshop
-          </div>
-           <p className='text-gray-700 mb-4 text-left mt-4'> 
-           Technical Workshop on Hands-on IoT & Smart Systems offers practical learning on sensor integration and IoT architecture, helping participants understand how smart systems are designed, connected, and applied in real-world scenarios.
-           </p>
-           <Link to={"/events"} className='text-blue-700 text-semibold'>Read More</Link>
-           
-          </div>
-        </div>
+{/* Divider */}
+<div className='flex animate-fade-slide justify-center mt-2'>
+  <img
+    src="/devider.png"
+    className="h-[70px] w-[200px]"
+    alt="divider"
+  />
+</div>
 
+<div className="w-full animate-fade-slide mt-10 flex flex-col items-center gap-6 pb-10">
+
+  {/* Announcement 1 */}
+  <div className="w-[85%] md:w-[70%] bg-white/80 backdrop-blur-md border border-blue-100 shadow-md rounded-xl p-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
     
+    <span className="flex items-center gap-2 text-xs font-semibold text-red-500">
+  <span className="relative flex h-2 w-2">
+    <span className="absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75 animate-ping-slow"></span>
+    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-600"></span>
+  </span>
+  NEW
 
-      </div>
+</span>
+ 
+
+    <h3 className="text-blue-900 text-xl font-semibold mt-2">
+      SYNAPSE Winners Announced 🎉
+    </h3>
+
+    <p className="text-gray-700 mt-2">
+        The winners of SYNAPSE have been officially announced. Congratulations to all participants for their outstanding performance and innovation.
+    </p>
+
+    <Link to="/events/event10" className="text-blue-700 font-semibold mt-3 inline-block hover:underline">
+      View Winners →
+    </Link>
+  </div>
+
+  {/* Announcement 2 */}
+  <div className="w-[85%] md:w-[70%] bg-white/80 backdrop-blur-md border border-blue-100 shadow-md rounded-xl p-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    
+    <div className="flex justify-between items-center">
+      <span className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full">
+        EVENT
+      </span>
+      <span className="text-gray-500 text-sm">24 Mar 2026</span>
+    </div>
+
+    <h3 className="text-blue-900 text-xl font-semibold mt-2">
+       Call for Articles – Gyanganaga Volume 2 ✍️📘
+    </h3>
+
+    <p className="text-gray-700 mt-2">
+       Submissions for Gyanganaga Volume 2 are now closed. We thank all participants for their valuable contributions. Winners and selected articles will be announced soon.
+    </p>
+
+    <Link to="/events/event9" className="text-blue-700 font-semibold mt-3 inline-block hover:underline">
+      View Details →
+    </Link>
+  </div>
+
+  {/* VIEW ALL BUTTON */}
+  <Link
+    to="/events"
+    className="mt-4 bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full font-semibold shadow-md hover:scale-105 transition-all duration-300"
+  >
+    View All Events →
+  </Link>
+
+</div>
 
       <h2 className="text-blue-900 mt-10 font-bold animate-fade-slide text-3xl text-center">
         Gallery
@@ -130,14 +163,22 @@ const Home = () => {
       </div>
           <div className='flex animate-fade-slide  flex-wrap gap-6 pb-10 justify-center'>
          <img src="/carousel1.jpeg" loading='lazy' className='w-[400px]  hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
-        
-        
+          <img src="/event11i4.jpg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
          <img src="/event1i1.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
         
         <img src="/event1i2.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
         
-        <img src="/event1i3.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        <img src="/event11i1.jpg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+          <img src="/event1i3.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
         
+        <img src="/event11i3.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+        
+        <img src="/event11i2.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
+    
+        
+        
+        
+      
         <img src="/event1i4.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />
     
           <img src="/carousel2.jpeg" loading='lazy' className='w-[400px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg  h-[300px]' alt="" />

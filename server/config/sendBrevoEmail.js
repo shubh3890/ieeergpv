@@ -4,7 +4,7 @@ const apiKey = client.authentications["api-key"];
 
 apiKey.apiKey = process.env.BREVO_API_KEY;
 const tranEmailApi = new SibApiV3Sdk.TransactionalEmailsApi();
-const sendRegistrationEmail = async (email, name) => {
+const sendRegistrationEmail = async (email, name,event) => {
   const whatsappLink = "https://chat.whatsapp.com/KVfacG3JTdO2yo2srJL4al";
   return tranEmailApi.sendTransacEmail({
     sender: {
@@ -12,7 +12,7 @@ const sendRegistrationEmail = async (email, name) => {
       name: "IEEE RGPV"
     },
     to: [{ email, name }],
-    subject: "Registration Confirmed | IEEE RGPV's Synapse : The AI Debate",
+    subject: `Registration Confirmed | IEEE RGPV's ${event}`,
     // htmlContent: `
     //   <h2>Hi ${name} 👋</h2>
     //   <p>Your registration was successful.</p>
@@ -44,7 +44,7 @@ const sendRegistrationEmail = async (email, name) => {
           </p>
 
           <p style="font-size:15px; color:#374151;">
-            Thank you for registering for the <strong> Synapse : The AI Debate</strong>.
+            Thank you for registering for the <strong> ${event}</strong>.
             We are happy to confirm that your registration has been
             <strong>successfully completed</strong>.
           </p>

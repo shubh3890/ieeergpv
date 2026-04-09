@@ -22,6 +22,7 @@ import Event8 from "./events/Event8";
 import { Analytics } from "@vercel/analytics/react"
 import Event9 from "./events/Event9";
 import Event10 from "./events/Event10";
+import Event11 from "./events/Event11";
 function App() {
   return (
     <div className="App ">
@@ -46,6 +47,7 @@ function App() {
            <Route path="/events/event8" element={<Event8 />} />
            <Route path="/events/event9" element={<Event9 />} />
            <Route path="/events/event10" element={<Event10 />} />
+           <Route path="/events/event11" element={<Event11 />} />
            <Route path="/events/register" element={<Register />} />
      
       </Routes>

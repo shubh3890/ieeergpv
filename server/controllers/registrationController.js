@@ -7,7 +7,8 @@ const registrationController = async(req,res)=>{
          try {
       await sendRegistrationEmail(
         saved.email,
-        saved.name
+        saved.name,
+        saved.event
       );
 
       //  Mark emailSent = true

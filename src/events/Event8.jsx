@@ -28,7 +28,8 @@ const Event7 = () => {
               <br />
               <br />
              
-              Gallery of the Event will be shared soon.
+              The lecture provided valuable industry insights and practical exposure to cutting-edge technologies.
+It motivated students to bridge the gap between research and real-world applications.
              </p>
              
              

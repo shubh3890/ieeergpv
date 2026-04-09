@@ -23,6 +23,7 @@ module.exports = {
         float: 'float 3s ease-in-out infinite',
          "fade-slide": "fadeSlide 0.8s ease-out forwards",
         "slow-zoom": "slowZoom 8s ease-out forwards",
+         'ping-slow': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
       },
     },
   },
