@@ -125,7 +125,7 @@ const Team = () => {
       <img src="ambhujtiwari.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Ambuj Tiwari</div>
-      <div className='text-gray-700 text-left font-semibold'>Event Managment</div>
+      <div className='text-gray-700 text-left font-semibold'>Event Management</div>
       
      
       </div>
@@ -136,7 +136,7 @@ const Team = () => {
       <img src="vaibhavi.jpeg" loading='lazy' className='w-full rounded-lg hover:scale-110 transition-all duration-500 ease-in-out h-full object-cover' alt="" />
       </div>
       <div className='text-blue-950 font-semibold text-2xl text-left'>Vaibhavi Tiwari</div>
-      <div className='text-gray-700 text-left font-semibold'>Event Managment</div>
+      <div className='text-gray-700 text-left font-semibold'>Event Management</div>
       
      
       </div>
